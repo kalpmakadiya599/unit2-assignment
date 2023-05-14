@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .calculator {
+            margin: auto;
+            width: 240px;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            box-shadow: 2px 2px 5px #ccc;
+            padding: 10px;
+        }
+        .display {
+            width: 90px;
+            height: 40px;
+            font-size: 28px;
+            text-align: right;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        button {
+            width: 50px;
+            height: 50px;
+            font-size: 24px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #fff;
+            box-shadow: 1px 1px 3px #ccc;
+        }
+        button:hover {
+            background-color: #eee;
+        }
+        button:active {
+            box-shadow: none;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        h2 {
+            color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Masai Calculator</h2>
+    <div class="calculator">
+        <div class="display">0</div>
+        <div class="row">
+           <button>7</button>
+           <button>8</button>
+           <button>9</button>
+           <button style="color: white; background-color: black;">+</button>
+        </div>
+        <div class="row">
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button style="color: white; background-color: black;">-</button>
+        </div>
+        <div class="row">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button style="color: white; background-color: black;">x</button>
+        </div>
+        <div class="row">
+            <button>0</button>
+            <button style="color: white; background-color: black;">=</button>
+            <button style="color: white; background-color: black;">/</button>
+            <button style="color: white; background-color: red;">C</button>
+        </div>
+       
+    </div>
+</body>
+</html>
