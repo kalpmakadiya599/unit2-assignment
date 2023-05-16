@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #app {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #075e54;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        #chat-list {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        #chat-list ul {
+            list-style-type: none;
+        }
+
+        #chat-list li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #chat-list .active {
+            background-color: #e2f4e9;
+        }
+
+        #chat-window {
+            flex: 3;
+            background-color: #fff;
+            border-left: 1px solid #ddd;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: scroll;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sent {
+            background-color: #dcf8c6;
+            align-self: flex-end;
+        }
+
+        .received {
+            background-color: #fff;
+            align-self: flex-start;
+        }
+
+        .timestamp {
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>WhatsApp</h1>
+        </header>
+        <main>
+            <div id="chat-list">
+                <ul>
+                    <li class="active">Kalp Makadiya</li>
+                    <li>Vivek Upadhyey</li>
+                    <li>Govind Chaurasiya</li>
+                </ul>
+            </div>
+            <div id="chat-window">
+                <div class="chat-header">
+                    <h2>Ajay Saroj</h2>
+                </div>
+                <div class="chat-messages">
+                    <div class="message-sent">
+                        <p>Hey, How Are You</p>
+                        <span class="timestamp">10:00 AM</span>
+                    </div>
+                    <div class="message received">
+                        <p>Im Good Thanks</p>
+                        <span class="timestamp">10:01 AM</span>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Type a message...">
+                    <button>Send</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
